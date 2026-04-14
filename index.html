@@ -135,24 +135,80 @@
                     </ul>
                 </div>
                 
-                <!-- Other Chapters -->
+                <!-- Chapter 2 -->
                 <div class="chapter">
                     <div class="chapter-header">
                         <h2>Quem Você Era</h2>
                         <i class="fa-solid fa-circle-chevron-down"></i>
                     </div>
+                    <ul class="question-list">
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Quais eram as coisas que você mais amava fazer quando era mais jovem?</span>
+                        </li>
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Que sonhos você tinha antes de formar a sua própria família?</span>
+                        </li>
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Havia alguma paixão ou hobby que você deixou pelo caminho?</span>
+                        </li>
+                    </ul>
                 </div>
+                
+                <!-- Chapter 3 -->
                 <div class="chapter">
                     <div class="chapter-header">
-                        <h2>Quem Você Era</h2>
+                        <h2>Seu Caminho</h2>
                         <i class="fa-solid fa-circle-chevron-down"></i>
                     </div>
+                    <ul class="question-list">
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Como você decidiu a sua área de atuação ou o que queria fazer da vida?</span>
+                        </li>
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Qual foi o maior desafio que você enfrentou na sua jornada profissional?</span>
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- Chapter 4 -->
                 <div class="chapter">
                     <div class="chapter-header">
-                        <h2>Quem Você Era</h2>
+                        <h2>Amor e Parceria</h2>
                         <i class="fa-solid fa-circle-chevron-down"></i>
                     </div>
+                    <ul class="question-list">
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Como você conheceu aquela pessoa especial que marcou a sua vida?</span>
+                        </li>
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Qual foi a lição mais valiosa que você aprendeu sobre relacionamentos?</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 5 -->
+                <div class="chapter">
+                    <div class="chapter-header">
+                        <h2>Ser Mãe</h2>
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                    <ul class="question-list">
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Como foi a experiência e o sentimento quando você descobriu que seria mãe?</span>
+                        </li>
+                        <li class="question-item upcoming" data-status="upcoming">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>O que mais mudou em você depois da maternidade?</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </aside>
@@ -165,11 +221,6 @@
                 <div class="content-header">
                     <div class="top-bar">
                         <span class="tag">Suas Raízes</span>
-                        <button class="icon-btn rounded">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                              <path d="M11.4688 17.4688L17.4688 11.5C17.75 11.1875 18.2188 11.1875 18.5312 11.5C18.8125 11.7812 18.8125 12.25 18.5312 12.5312L13.0312 18L18.5 23.5C18.8125 23.7812 18.8125 24.25 18.5 24.5312C18.2188 24.8438 17.75 24.8438 17.4688 24.5312L11.4688 18.5312C11.1562 18.25 11.1562 17.7812 11.4688 17.4688ZM23.4688 11.4688V11.5C23.75 11.1875 24.2188 11.1875 24.5312 11.5C24.8125 11.7812 24.8125 12.25 24.5312 12.5312L19.0312 18.0312L24.5 23.5C24.8125 23.7812 24.8125 24.25 24.5 24.5312C24.2188 24.8438 23.75 24.8438 23.4688 24.5312L17.4688 18.5312C17.1562 18.25 17.1562 17.7812 17.4688 17.4688L23.4688 11.4688Z" fill="#263435"/>
-                            </svg>
-                        </button>
                     </div>
                     <h2 class="main-question">Quando e onde você nasceu?</h2>
                 </div>
@@ -177,26 +228,22 @@
                 <!-- Answer Area -->
                 <div class="answer-area">
                     <div class="text-content">
-                        <p>Nasci em 3 de abril de 1952, em Recife, Pernambuco. Era uma manhã quente, como quase todas por lá. Minha mãe sempre contava que o médico chegou atrasado e quem ajudou no parto foi a parteira do bairro, Dona Creusa, uma senhora enorme com mãos de ferro e voz de cantora de forró. Cresci no bairro da Boa Vista, numa rua de paralelepípedo onde as crianças jogavam bola até escurecer. O cheiro de mangaba madura é uma coisa que nunca saiu da minha memória.</p>
+                        <textarea class="answer-input" placeholder="Escreva aqui ou clique no microfone para começar a ditar a sua resposta..."></textarea>
+                        <div id="dynamicAudio" class="dynamic-audio-container"></div>
                     </div>
                     
                     <div class="media-controls">
-                        <div class="media-thumbnails">
-                           <!-- Placeholder for images -->
-                           <div class="thumbnail t1">
-                              <img src="https://images.unsplash.com/photo-1549420074-ce7941dc4ff1?w=150" alt="Recife rua">
-                           </div>
-                           <div class="thumbnail t2">
-                              <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=150" alt="Recife casa">
-                           </div>
+                        <div class="media-thumbnails" id="dynamicThumbnails">
+                           <!-- Images will be injected here dynamically -->
                         </div>
 
                         <div class="actions-left">
-                            <button class="action-btn">
+                            <input type="file" id="imageUploadInput" accept="image/*" multiple style="display: none;">
+                            <button class="action-btn" id="btnUploadImage">
                                 <i class="fa-regular fa-image"></i>
                                 <span>Imagem</span>
                             </button>
-                            <button class="action-btn">
+                            <button class="action-btn" id="btnUploadAudio">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="fa-regular">
                                   <path d="M6.01172 1.125C4.25391 1.125 2.66016 2.0625 1.76953 3.5625C0.902344 5.08594 0.902344 6.9375 1.76953 8.4375C2.66016 9.96094 4.25391 10.875 6.01172 10.875C7.74609 10.875 9.33984 9.96094 10.2305 8.4375C11.0977 6.9375 11.0977 5.08594 10.2305 3.5625C9.33984 2.0625 7.74609 1.125 6.01172 1.125ZM6.01172 12C3.85547 12 1.88672 10.875 0.808594 9C-0.269531 7.14844 -0.269531 4.875 0.808594 3C1.88672 1.14844 3.85547 0 6.01172 0C8.14453 0 10.1133 1.14844 11.1914 3C12.2695 4.875 12.2695 7.14844 11.1914 9C10.1133 10.875 8.14453 12 6.01172 12ZM6.01172 3.375V8.625C6.01172 8.95312 5.75391 9.1875 5.44922 9.1875C5.12109 9.1875 4.88672 8.95312 4.88672 8.625V3.375C4.88672 3.07031 5.12109 2.8125 5.44922 2.8125C5.75391 2.8125 6.01172 3.07031 6.01172 3.375ZM7.88672 4.6875V7.3125C7.88672 7.64062 7.62891 7.875 7.32422 7.875C6.99609 7.875 6.76172 7.64062 6.76172 7.3125V4.6875C6.76172 4.38281 6.99609 4.125 7.32422 4.125C7.62891 4.125 7.88672 4.38281 7.88672 4.6875ZM4.13672 5.0625V6.9375C4.13672 7.26562 3.87891 7.5 3.57422 7.5C3.24609 7.5 3.01172 7.26562 3.01172 6.9375V5.0625C3.01172 4.75781 3.24609 4.5 3.57422 4.5C3.87891 4.5 4.13672 4.75781 4.13672 5.0625ZM9.76172 5.625V6.375C9.76172 6.70312 9.50391 6.9375 9.19922 6.9375C8.87109 6.9375 8.63672 6.70312 8.63672 6.375V5.625C8.63672 5.32031 8.87109 5.0625 9.19922 5.0625C9.50391 5.0625 9.76172 5.32031 9.76172 5.625Z" fill="#263435"/>
                                 </svg>
@@ -205,7 +252,7 @@
                         </div>
                         
                         <div class="actions-right">
-                            <button class="record-btn">
+                            <button class="record-btn" id="btnDictate">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12" fill="none" class="text-dark">
                                   <path d="M5.25 2.25C5.25 1.64062 4.73438 1.125 4.125 1.125C3.49219 1.125 3 1.64062 3 2.25V6C3 6.63281 3.49219 7.125 4.125 7.125C4.73438 7.125 5.25 6.63281 5.25 6V2.25ZM1.875 2.25C1.875 1.00781 2.88281 0 4.125 0C5.36719 0 6.375 1.00781 6.375 2.25V6C6.375 7.24219 5.36719 8.25 4.125 8.25C2.88281 8.25 1.875 7.24219 1.875 6V2.25ZM1.125 5.0625V6C1.125 7.66406 2.46094 9 4.125 9C5.76562 9 7.125 7.66406 7.125 6V5.0625C7.125 4.75781 7.35938 4.5 7.6875 4.5C7.99219 4.5 8.25 4.75781 8.25 5.0625V6C8.25 8.10938 6.67969 9.82031 4.6875 10.1016V10.875H5.8125C6.11719 10.875 6.375 11.1328 6.375 11.4375C6.375 11.7656 6.11719 12 5.8125 12H2.4375C2.10938 12 1.875 11.7656 1.875 11.4375C1.875 11.1328 2.10938 10.875 2.4375 10.875H3.5625V10.1016C1.54688 9.82031 0 8.10938 0 6V5.0625C0 4.75781 0.234375 4.5 0.5625 4.5C0.867188 4.5 1.125 4.75781 1.125 5.0625Z" fill="#263435"/>
                                 </svg>
@@ -219,12 +266,12 @@
 
                 <!-- Navigation Footer -->
                 <div class="nav-footer">
-                    <button class="nav-btn icon-only">
+                    <button class="nav-btn icon-only" id="btnPrevQuestion">
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
                           <path d="M0.205078 5.42773L5.45508 0.205078C5.70117 -0.0683594 6.11133 -0.0683594 6.38477 0.205078C6.63086 0.451172 6.63086 0.861328 6.38477 1.10742L1.57227 5.89258L6.35742 10.7051C6.63086 10.9512 6.63086 11.3613 6.35742 11.6074C6.11133 11.8809 5.70117 11.8809 5.45508 11.6074L0.205078 6.35742C-0.0683594 6.11133 -0.0683594 5.70117 0.205078 5.42773Z" fill="#263435"/>
                         </svg>
                     </button>
-                    <button class="nav-btn text-icon">
+                    <button class="nav-btn text-icon" id="btnNextQuestion">
                         <span>Próxima</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
                           <path d="M6.38477 5.42773C6.63086 5.70117 6.63086 6.11133 6.38477 6.35742L1.13477 11.6074C0.861328 11.8809 0.451172 11.8809 0.205078 11.6074C-0.0683594 11.3613 -0.0683594 10.9512 0.205078 10.7051L4.99023 5.91992L0.205078 1.10742C-0.0683594 0.861328 -0.0683594 0.451172 0.205078 0.205078C0.451172 -0.0683594 0.861328 -0.0683594 1.10742 0.205078L6.38477 5.42773Z" fill="#263435"/>
@@ -233,6 +280,52 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <img id="imageModalImg" src="" alt="Ampliada">
+            <div class="image-modal-actions">
+                <button id="btnDeleteImage" class="modal-btn delete-btn"><i class="fa-solid fa-trash"></i> Excluir</button>
+                <button id="btnCloseModal" class="modal-btn close-btn"><i class="fa-solid fa-xmark"></i> Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Record Modal -->
+    <div id="audioRecordModal" class="image-modal">
+        <div class="audio-modal-content">
+            <div class="record-indicator">
+                <div class="pulse-circle" id="recordPulse"></div>
+                <span id="recordTimer">10s</span>
+            </div>
+            
+            <div class="audio-preview-container" id="audioPreviewContainer" style="display: none;">
+                <audio id="audioModalPlayer" controls></audio>
+            </div>
+            
+            <p id="recordStatusText" class="record-status-text">Pronto para gravar?</p>
+            
+            <div class="image-modal-actions">
+                <button id="btnRecordCancel" class="modal-btn close-btn"><i class="fa-solid fa-xmark"></i> Fechar</button>
+                <button id="btnRecordStart" class="modal-btn delete-btn" style="background: var(--color-text-dark); color: white;"><i class="fa-solid fa-microphone"></i> Gravar</button>
+                <button id="btnRecordStop" class="modal-btn delete-btn" style="display: none; background: #ff4757; color: white;"><i class="fa-solid fa-stop"></i> Parar</button>
+                <button id="btnRecordDiscard" class="modal-btn delete-btn" style="display: none;"><i class="fa-solid fa-trash"></i> Descartar</button>
+                <button id="btnRecordSave" class="modal-btn" style="display: none; background: var(--color-accent-green); color: var(--color-text-dark);"><i class="fa-solid fa-check"></i> Anexar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Playback Modal -->
+    <div id="audioPlaybackModal" class="image-modal">
+        <div class="audio-modal-content">
+            <audio id="audioPlaybackPlayer" controls style="width: 100%;"></audio>
+            <div class="image-modal-actions">
+                <button id="btnDeleteAudioPlayback" class="modal-btn delete-btn"><i class="fa-solid fa-trash"></i> Excluir</button>
+                <button id="btnCloseAudioPlayback" class="modal-btn close-btn"><i class="fa-solid fa-xmark"></i> Fechar</button>
+            </div>
+        </div>
     </div>
 
     <script src="main.js"></script>
