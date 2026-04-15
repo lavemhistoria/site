@@ -285,9 +285,9 @@ button, input, select, textarea {
 }
 
 .content-wrapper {
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
-    padding: 40px 60px;
+    padding: 40px 100px;
     height: 100%;
     display: flex;
     flex-direction: column;

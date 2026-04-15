@@ -1,4 +1,10 @@
 // main.js - Logic for Lá Vem História Interface
+
+// Security check: must be logged in to view this page
+if (localStorage.getItem('lavemhistoriaToken') !== 'true') {
+    window.location.href = 'login.html';
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     // Question item selection logic
     const questionItems = document.querySelectorAll('.question-item');
@@ -640,6 +646,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const idx = window.currentActiveIndex;
             if (idx !== undefined && idx < questionItems.length - 1) {
                 questionItems[idx + 1].click();
+            }
+        });
+    }
+
+    // Logout logic
+    const btnLogout = document.getElementById('btnLogout');
+    if (btnLogout) {
+        btnLogout.addEventListener('click', () => {
+            if (confirm("Deseja realmente sair da sua conta?")) {
+                localStorage.removeItem('lavemhistoriaToken');
+                window.location.href = 'login.html';
             }
         });
     }

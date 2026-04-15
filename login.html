@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Lá Vem História</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* Using a gradient that matches the theme if image fails */
+            background: linear-gradient(135deg, #f8f7f2 0%, #e9e8e0 100%);
+        }
+
+        .login-card {
+            background: white;
+            padding: 48px;
+            border-radius: 24px;
+            box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .logo-area {
+            margin-bottom: 32px;
+        }
+
+        .logo-area i {
+            font-size: 48px;
+            color: var(--color-text-dark);
+            margin-bottom: 16px;
+        }
+
+        .login-card h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--color-text-dark);
+        }
+
+        .login-card p {
+            color: var(--color-text-muted);
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--color-text-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #fafafa;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--color-accent-green);
+            box-shadow: 0 0 0 4px rgba(220, 237, 145, 0.2);
+            background: white;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 16px;
+            border-radius: 12px;
+            border: none;
+            background-color: var(--color-accent-green);
+            color: var(--color-text-dark);
+            font-size: 16px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 12px;
+        }
+
+        .login-btn:hover {
+            background-color: #d2e47e;
+            transform: translateY(-2px);
+        }
+
+        .login-btn:active {
+            transform: translateY(0);
+        }
+
+        .error-message {
+            color: #ff4757;
+            font-size: 14px;
+            margin-top: 16px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="logo-area">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <h1>Lá Vem História</h1>
+            <p>Faça login para continuar sua jornada</p>
+        </div>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" placeholder="Seu usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Sua senha" required>
+            </div>
+
+            <button type="submit" class="login-btn">Entrar</button>
+            <div id="errorMessage" class="error-message">Usuário ou senha incorretos.</div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
